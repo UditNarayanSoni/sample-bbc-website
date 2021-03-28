@@ -1,0 +1,359 @@
+<html>
+	<head>
+		<title>BBC NEWS</title>
+		
+		<style type="text/css">
+			#topbar{
+				width:1280px;
+				height:40px;
+				margin:0 auto;
+			}
+			body{
+				margin:0;
+				padding:0;
+				font-family:Helvetica, Arial, freesans, sans-serif;
+			}
+			.topbar-sec{
+				float:left;
+				border-left:1px grey solid;
+				height:100%;
+			}
+			#bbclogo{
+				margin-top:5px;
+				margin-left:5px;
+				margin-right:6px;
+				height:30px;
+				float:left;	
+			}
+			#signin{
+				width:25px;
+				height:20px;
+				margin-left:15px;
+				margin-top:13px;
+				margin-right:8px;
+				float:left;
+			}
+			#signin-text{
+				font-weight:bold;
+				position:relative;
+				top:14px;
+				padding-right:50px;
+				font-size:90%;
+			}
+			.mainhead{
+				position:relative;
+				top:14px;
+				font-weight:bold;
+				padding-right:18px;
+				padding-top:16px;
+				padding-left:18px;
+				font-size:90%;
+			}
+			#more{
+				float:left;
+				margin-left:55px;
+				margin-top:14px;
+			}
+			#more-text{
+				float:left;
+				position:relative;
+				top:14px;
+				padding-left:18px;
+				font-weight:bold;
+				font-size:90%;
+			}
+			#search{
+				margin-top:10px;
+				width:26px;
+				height:24px;
+			}
+			#search-text{
+				border:0px;
+				background-color:#E4E4E4;
+				margin-left:14px;
+				margin-top:10px;
+				padding-top:4px;
+				padding-left:9px;
+				padding-bottom:5px;
+				float:left;
+				color:#858585;
+				font-weight:bold;
+				font-size:80%;
+			}
+			.clear{
+				clear:both;
+			}
+			#fullredbar{
+				width:100%;
+				background-color:#BB1919;
+				height:60px;
+			}
+			#midbar{
+				margin:0 auto;
+				width:1280px;
+				height:60px;
+			}
+			#news{
+				font-size:41px;
+				color:white;
+				margin:0;
+				padding:0;
+				font-family:Helvetica, Arial, freesans, sans-serif;
+				padding-top:6px;
+				font-weight:normal;
+				text-decoration:none;
+			}
+			#bottombar{
+				width:100%;
+				height:30px;
+				background-color:#BB1919;
+			}
+			#menu{
+				width:1280px;
+				height:30px;
+				margin:0 auto;
+			}
+			.bottom-sec{
+				position:relative;
+				top:6px;
+				float:left;
+				border-right:1px #BB4545 solid;
+				border-radius:40%;
+				font-weight:normal;
+				color:white;
+				padding-right:12px;
+				padding-left:11px;
+				font-size:14px;
+				text-decoration:none;
+			}
+			#arrow{
+				width:12px;
+				height:13px;
+				padding-left:3px;
+			}
+			#page-container{
+				width:1280px;
+				margin:0 auto;
+			}
+			h2{
+				width:45px;
+				font-weight:normal;
+				margin-left:10px;
+				margin-top:10px;
+				font-size:20px;
+				border-bottom:3px solid #a91717;
+			}
+			h1{
+				text-decoration:none;
+				color:#726f6f;
+			}
+			h1:hover{
+				color:#1167a8;
+				text-decoration:underline;
+			}
+			h1:active ,h4:active{
+				color: #1380A1;
+			}
+			#first-article{
+				float:left;
+			}
+			#article{
+				float:left;
+				width:490px;
+				padding-right:5px;
+				margin-left:10px;	
+			}
+			#article-summary{
+				width:480px;
+				color:#5A5A5A;
+				float:left;
+				margin-left:10px;
+				font-size:90%;
+			}
+			#article-img{
+				width:485px;
+				height:290px;
+				margin-left:10px;
+				float:left;
+			}
+			.clock{
+				position:relative;
+				top:5px;
+				width:20px;
+			}
+			#article-hr{
+				width:125px;
+				border:1px solid #BB1919;
+			}
+			#second-article{
+				float:left;
+			}
+			#article1{
+				width:230px;
+				margin-left:4px;
+				float:left;
+				padding-right:10px;
+			}
+			#article-summary1{
+				font-size:90%;
+				width:240px;
+				height:120px;
+				color:#5A5A5A;
+				font-weight:normal;
+				padding-left:5px;
+			}
+			#article-img1{
+				margin-top:52px;
+				width:240px;
+				height:150px;
+			}
+			h4{
+				text-decoration:none;
+				color:#010101;
+			}
+			h4:hover{
+				text-decoration:underline;			
+				color:#1167a8;
+			}
+			#third-article{
+				float:left;
+				margin-left:10px;
+			}
+			#fourth-article{
+				float:left;
+				margin-left:10px;
+			}
+
+		</style>
+	</head>
+<body>
+	<!--This box is for Top bar section-->
+	<div id="topbar">
+		<img id="bbclogo"src="Image/bbc.jpg"/>
+		<div class="topbar-sec">
+			<img id="signin"src="Image/signin.jpg"/>
+			<span id="signin-text">Sign in</span>
+		</div>
+		
+		<div class="topbar-sec"><span class="mainhead">Home</span></div>
+		<div class="topbar-sec"><span class="mainhead">News</span></div>
+		<div class="topbar-sec"><span class="mainhead">Sport</span></div>
+		<div class="topbar-sec"><span class="mainhead">Reel</span></div>
+		<div class="topbar-sec"><span class="mainhead">Worklife</span></div>
+		<div class="topbar-sec"><span class="mainhead">Travel</span></div>
+		<div class="topbar-sec"><span class="mainhead">Future</span></div>
+		<div class="topbar-sec"><span class="mainhead">Culture</span></div>
+		<div class="topbar-sec"><span id="more-text">More</span><img id="more"src="Image/more.jpg"/></div>
+		<div class="topbar-sec"><input id="search-text"type="search" type="text" value="Search"><img id="search"src="Image/search.jpg"/></div>
+	
+	</div>	
+	
+	<!--This box is for Clearing the gap/space between second box-->
+	<div class="clear"></div>
+	
+	<!--This box is for News bar section-->
+	<div id="fullredbar">
+		<div id="midbar">
+		<h1 id="news">NEWS</h1>
+		</div>
+	</div>
+	
+	<!--This box is for Menu bar section-->
+	<div id="bottombar">
+		<div id="menu">
+		<div><a href="" class="bottom-sec">Home</a></div>
+		<div><a href="" class="bottom-sec">Coronavirus</a></div>
+		<div><a href="" class="bottom-sec">Video</a></div>
+		<div><a href="" class="bottom-sec">World</a></div>
+		<div><a href="" class="bottom-sec">Asia</a></div>
+		<div><a href="" class="bottom-sec">UK</a></div>
+		<div><a href="" class="bottom-sec">Business</a></div>
+		<div><a href="" class="bottom-sec">Tech</a></div>
+		<div><a href="" class="bottom-sec">Science</a></div>
+		<div><a href="" class="bottom-sec">Stories</a></div>
+		<div><a href="" class="bottom-sec">Entertainment & Arts</a></div>
+		<div><a href="" class="bottom-sec">Health</a></div>
+		<div><a href="" class="bottom-sec">World News TV</a></div>
+		<div><a href="" class="bottom-sec">In Picture</a></div>
+		<div><a href="" class="bottom-sec">More<img id="arrow"src="Image/morearrow.jpg"/></a></div>
+		</div>
+	</div>
+	
+	<div class="clear"></div> 
+	<!--This box is for Tech-article section-->
+	<div id="page-container">
+		
+		<div id="first-article">
+			<h2>Tech</h2>
+				<div><a href="https://www.bbc.com/news/technology-53485569"><img id="article-img"src="Image/img.jpg"><br>
+				<h1 id="article">The great COVID-19 tracing apps mystery</h1></a></div>
+			
+			<div id="article-summary">
+				<p>Germany and Switzerland are not sure how well their apps are working as the date is out of bond.</p>
+				<p><img class="clock" src="Image/clock.jpg"/>7hr 22 July 2020 | <a href="https://www.bbc.com/news/technology">Technology</a>
+				<hr id="article-hr" text-align="left">
+			</div>
+			<p><a href="https://www.bbc.com/news/health-52354520"style="margin:1px;text-decoration:none;color:black"><strong>Are there are any drugs that can treat coronavirus?</strong></p>
+			<p><a href="https://www.bbc.com/news/av/world-asia-india-53445010/india-s-diamond-studded-response-to-the-virus"style="margin:0px;text-decoration:none;color:black"><strong>India's diamond-studded response to the coronavirus</strong></p>
+		</div>
+		
+		<div id="second-article">
+			<div><a href="https://www.bbc.com/news/technology-53500252"><img id="article-img1" src="Image/img1.jpg"/><br>
+				<h4 id="article1">Elon Musk briefly becomes fifth-richest person</h4></a>
+				
+				<div id="article-summary1">
+					<p>Tesla's soaring share price means Mr Musk also gain the option of accessing $2.1bn worth of stock.</p>
+					<p><img class="clock" src="Image/clock.jpg"/>2hr | <a href="https://www.bbc.com/news/technology">Technology</a>
+				</div>
+			</div>
+			<div><a href="https://www.bbc.co.uk/search?q=Twitter+cracks+down+on+QAnon+conspiracy+theorists&page=1"><img id="article-img1" src="Image/img3.jpg"/><br>
+				<h4 id="article1">Twitter cracks down on QAnon conspiracy theorists</h4></a>
+				
+				<div id="article-summary1">
+				<p>The social media sites says it is taking action to limit behaviour that could leat to "offline harm".</p>
+				<p><img class="clock" src="Image/clock.jpg"/>12hr | <a href="https://www.bbc.com/news/technology">Technology</a>
+				</div>
+			</div>			
+		</div>
+
+		<div id="third-article">
+			<div><a href="https://www.bbc.com/news/technology-53503710"><img id="article-img1" src="Image/img2.jpg"/><br>
+				<h4 id="article1">Slack makes EU antitrust claim against Microsoft</h4></a>
+			
+				<div id="article-summary1">
+					<p>Work messaging platform Slack says building Team in Office 365 gives Microsoft an unfair advantage.</p>
+					<p><img class="clock" src="Image/clock.jpg"/>5hr | <a href="https://www.bbc.com/news/technology">Technology</a>
+				</div>
+			</div>
+			
+			<div><a href="https://www.bbc.com/news/technology-53490042"><img id="article-img1" src="Image/img4.jpg"/><br>
+				<h4 id="article1">US report accused China of 'digital authoritarianism'</h4></a>
+			
+				<div id="article-summary1">
+					<p>Its says the US is on the brick of precipice where it could lose control of the digital sphere.</p>
+					<p><img class="clock" src="Image/clock.jpg"/>5hr | <a href="https://www.bbc.com/news/technology">US & Canada</a>
+				</div>
+			</div>
+		</div>
+		<div id="fourth-article">
+			<div><a href="https://www.bbc.com/news/technology-53498685"><img id="article-img1" src="Image/img5.jpeg"/><br>
+				<h4 id="article1">Facebook to examine racist algorithm</h4></a>
+			
+				<div id="article-summary1">
+					<p>It says it has listened to concerns taht its products and policies do not treat everyone equally.</p>
+					<p><img class="clock" src="Image/clock.jpg"/>3hr | <a href="https://www.bbc.com/news/technology">Technology</a>
+				</div>
+			</div>
+			
+			<div><a href="https://www.bbc.co.uk/search?q=Apple+makes+2030+carbon-neutral+pledge&page=1"><img id="article-img1" src="Image/img6.jpg"/><br>
+				<h4 id="article1">Apple makes 2030 carbon-neutral pledge</h4></a>
+			
+				<div id="article-summary1">
+					<p>The "zero climate impact" promise cover both of its own operations and those of its suppliers.</p>
+					<p><img class="clock" src="Image/clock.jpg"/>5hr | <a href="https://www.bbc.com/news/technology">Technology</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
